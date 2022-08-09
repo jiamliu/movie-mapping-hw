@@ -5,39 +5,11 @@
   align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title {
+  font-family: 'Monoton', cursive;
+  color: red;
+  font-weight: lighter;
+  font-size: 4vh;
 }
 
 .genres {
@@ -46,14 +18,6 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-
-}
-
-.genre {
-  width: 150px;
-  margin: 2px;
-
-  border: 1px solid black;
 }
 
 .poster {
@@ -63,16 +27,41 @@
   justify-content: space-around;
 
   background-color: grey;
-  width: 30vw;
-  padding: 10px;
-  border: 2px solid black;
-  margin: 5px;
+  width: 25vw;
+  padding: 20px;
+  border: 3px solid black;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px darkgrey;
+  
+  margin: 20px;
   color: white;
 }
 
+.poster:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+.genre {
+  width: 150px;
+  height: 1.5vh;
+  margin: 2px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  font-size: 1.3vh;
+  
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
 img {
-  width: 28vw;
-  border: 2px solid black;
+  width: 22vw;
+  border: 3px solid black;
+  border-radius: 15px;
 }
 
 .movie-grid {
