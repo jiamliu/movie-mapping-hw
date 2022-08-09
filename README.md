@@ -133,4 +133,5 @@ Now that you've completed both components, you'll need to `import` them both int
 
 ## Submission Guidelines
 
-- PR must be submitted utilizing these guidelines: [PR Guidelines](https://github.com/JSR-2-14/template_pull_request)
+- PR must be submitted utilizing these guidelines: [PR Guidelines](https://github.com/SEI-2-22/template_pull_request)
+
