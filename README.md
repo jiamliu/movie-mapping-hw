@@ -6,6 +6,10 @@
 
 We'll be building a simple movie application that renders movies and genres to practice mapping over components and passing data with props. You'll be creating 2 new components to accomplish this.
 
+## What We're Building
+
+<img src="./public/example.png" alt="example" width="100%" />
+
 ## Getting Started
 
 - `Fork` and `Clone` this repository
