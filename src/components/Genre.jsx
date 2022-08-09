@@ -1,8 +1,8 @@
-const Genre = (props) => {
+const Genre = ({ genre }) => {
 
   let colorVariable
 
-  switch (props.genre.name) {
+  switch (genre.name) {
     case 'Action':
       colorVariable = 'blue'
       break
@@ -65,7 +65,7 @@ const Genre = (props) => {
   }
 
   return (
-    <div className="genre" style={{ backgroundColor: colorVariable, color: "white" }}>{props.genre.name}</div>
+    <div className="genre" style={{ backgroundColor: colorVariable, color: "white" }}>{genre.name}</div>
   )
 }
 

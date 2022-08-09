@@ -6,7 +6,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="title">Michael's Movies</h1>
+      <h1 className="title">Movie Mapping</h1>
       <div className="movie-grid">
         {movieArray.map((movie) => (
           <Movie key={movie.id} movie={movie} />
