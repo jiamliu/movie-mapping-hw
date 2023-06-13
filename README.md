@@ -1,4 +1,4 @@
-### SEIR 123
+### SEIR 0508
 
 # React Movie Mapping
 
@@ -56,37 +56,6 @@ export default Movie
 Now we'll need to make a component for an individual `Genre` within the array of genres for each movie.
 
 - Let's keep the JSX simple, since we'll only need to be taking in the name of the genre from props
-- The important aspect of this component is _styling_, we want to know what each genre is at least by color
-- In the JSX for rendering a genre name in the `Genre` component, we'll need to add in some conditional styling. A switch statement above our return may be useful here.
-- After setting up a switch case to set a variable for colors associated with each genre name that could be coming in from props you'll need to apply it with _inline_ styling in the JSX
-- To style inline, add a style prop on the tag you want to affect and open 2 curly brackets up. Styles are camelCased key value pairs with 'strings' for values.
-  Just an Example:
-
-```js
-let colorVariable
-switch (props.genre) {
-  case 'some genre':
-    colorVariable = someColor.associated.with.a.specific.genre
-    break
-  default:
-    colorVariable = 'some cool color'
-}
-
-return (
-  <div>
-    // EXAMPLE of inline styling without a variable
-    <p style={{ backgroundColor: 'darkslateblue', color: 'rgb(255,255,255)' }}>
-      {props.genre}
-    </p>
-    // EXAMPLE of inline styling WITH a variable
-    <p style={{ backgroundColor: colorVariable, color: '#000000' }}>
-      {props.something}
-    </p>
-  </div>
-)
-```
-
-- Add a specific background color for each genre associated with the movies in `movies.json`
 
 ### Mapping
 
@@ -134,7 +103,40 @@ Now that you've completed both components, you'll need to `import` them both int
 - All genres for each movie should be rendered on the page
 - Each genre should have a unique color associated with it
 
-## Submission Guidelines
 
-- PR must be submitted utilizing these guidelines: [PR Guidelines](https://github.com/SEI-2-22/template_pull_request)
+## Bonus
+
+- The important aspect of this component is _styling_, we want to know what each genre is at least by color
+- In the JSX for rendering a genre name in the `Genre` component, we'll need to add in some conditional styling. A switch statement above our return may be useful here.
+- After setting up a switch case to set a variable for colors associated with each genre name that could be coming in from props you'll need to apply it with _inline_ styling in the JSX
+- To style inline, add a style prop on the tag you want to affect and open 2 curly brackets up. Styles are camelCased key value pairs with 'strings' for values.
+  Just an Example:
+
+```js
+let colorVariable
+switch (props.genre) {
+  case 'some genre':
+    colorVariable = someColor.associated.with.a.specific.genre
+    break
+  default:
+    colorVariable = 'some cool color'
+}
+
+return (
+  <div>
+    // EXAMPLE of inline styling without a variable
+    <p style={{ backgroundColor: 'darkslateblue', color: 'rgb(255,255,255)' }}>
+      {props.genre}
+    </p>
+    // EXAMPLE of inline styling WITH a variable
+    <p style={{ backgroundColor: colorVariable, color: '#000000' }}>
+      {props.something}
+    </p>
+  </div>
+)
+```
+
+- Add a specific background color for each genre associated with the movies in `movies.json`
+
+
 
