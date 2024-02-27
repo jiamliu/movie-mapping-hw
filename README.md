@@ -43,8 +43,7 @@ Next we'll need to create 2 components in the `components` folder. One component
 - What data can be taken from the array of data in `movies.json`?
 - You'll need at least a title, release date, overview, and image for each movie
 
-```js
-import React from 'react'
+```jsx
 
 const Movie = () => {
   return <div>// JSX for movie data from props here</div>
@@ -64,10 +63,10 @@ Now that you've completed both components, you'll need to `import` them both int
 - After importing both components into `App.js` you'll need to start by mapping through the data array
 - This can be done either in the return of `App.js`. Example for mapping in the return:
 
-```js
+```jsx
   return (
     <div>
-      {movieArray.map((movie, index) => (
+      {movieArray.map((movie) => (
         // Do something here inside the map
       ))}
     </div>
@@ -112,7 +111,7 @@ Now that you've completed both components, you'll need to `import` them both int
 - To style inline, add a style prop on the tag you want to affect and open 2 curly brackets up. Styles are camelCased key value pairs with 'strings' for values.
   Just an Example:
 
-```js
+```jsx
 let colorVariable
 switch (props.genre) {
   case 'some genre':
