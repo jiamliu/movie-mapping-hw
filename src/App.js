@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       {movieArray.map((movie, index) => (
-        <div key={index} className="movie-wrapper">
+        <div key={index} className="movie-info">
           <Movie
             key={index}
             title={movie.title}
@@ -17,7 +17,7 @@ function App() {
             image={movie.image}
             genres={movie.genres}
           />
-          <div className="genres-wrapper">
+          <div className="genres-info">
             {movie.genres.map((genre, index) => (
               <Genre key={index} genre={genre} />
             ))}
